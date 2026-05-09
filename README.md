@@ -22,27 +22,55 @@ Created using Spring Initializr inside IntelliJ with:
 The assignment requires the following package layout:
 product
 
- ├── api
- 
- │ ├── ProductController
- 
- │ ├── request
- │ │      └── ProductRequest
- 
- │ └── response
- │        └── ProductResponse
- 
- ├── domain
- │      └── Product
- 
- ├── repository
- │      └── ProductRepository
- 
- ├── service
- │      └── ProductService
- 
- └── support
-        └── ProductMapper
+firstrestapispring/
+├── product/
+
+│   ├── api/
+
+│   │   ├── request/
+
+│   │   │   ├── ProductRequest.java
+
+│   │   │   └── UpdateProductRequest.java
+
+│   │   ├── response/
+
+│   │   │   └── ProductResponse.java
+
+│   │   └── ProductController.java
+
+│   ├── domain/
+
+│   │   └── Product.java
+
+│   ├── repository/
+
+│   │   └── ProductRepository.java
+
+│   ├── service/
+
+│   │   └── ProductService.java
+
+│   └── support/
+│       ├── exception/
+
+│       │   └── ProductNotFoundException.java
+
+│       ├── ProductExceptionAdvisor.java
+
+│       ├── ProductExceptionSupplier.java
+
+│       └── ProductMapper.java
+
+├── shared/
+
+│   └── api/
+
+│       └── response/
+
+│           └── ErrorMessageResponse.java
+
+└── FirstRestApiSpringApplication.java
         
    “Next, create a project tree (packages and classes) according to the example… For now, the classes remain empty…”
 
